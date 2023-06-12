@@ -11,7 +11,7 @@ const converter = convertSvgToPng.createConverter({
 });
 app.use(bodyParser.text({
   type: '*/*',
-  limit: '10mb',
+  limit: '999mb',
 }));
 
 app.post('/convert', async (req, res) => {
